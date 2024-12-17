@@ -1,0 +1,753 @@
+/* Estilização geral */
+
+:root {
+  --primary-color: hsl(0, 0%, 20%);
+  --secondary-color: hsl(0, 0%, 60%);
+  --tertiary-color: hsl(0, 0%, 100%);
+  --quaternary-color: hsl(324, 63%, 44%);
+  --quinary-color: hsl(324, 63%, 42%);
+  --sexta-color: hsl(324, 63%, 44%, 10%);
+}
+
+.section {
+  margin-bottom: 8rem;
+}
+
+.title h2 {
+  font-size: clamp(2rem, -6.5915492958px + 4.7183098592vw, 3.5rem) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+/* Customização de Blocos únicos */
+
+/* Cabeçalho */
+
+.list-social,
+#search-form,
+.link-portal-aluno {
+  padding: 0 0 !important;
+  margin-top: 8px !important;
+  margin-bottom: 5px !important;
+}
+
+#top-menu {
+  background-color: hsl(0, 0%, 85%) !important;
+}
+
+#top-menu .container {
+  padding: 0 !important;
+}
+
+.navbar-brand {
+  margin-left: 1rem !important;
+}
+
+.navbar-toggler {
+  margin-right: 1rem !important;
+}
+
+.navbar-nav .nav-link,
+.btn-carrinho,
+.btn-cadastre {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+/* .navbar-collapse {
+  justify-content: center;
+} */
+
+#logo2 {
+  max-height: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+}
+
+/* Tenso mexer com o menu */
+
+/* .navbar-toggler {
+  display: block !important;
+}
+
+@media (min-width: 870px) {
+  .navbar-expand-md .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media (max-width: 870px) {
+  .navbar-nav {
+    // display: none !important;
+  }
+}
+*/
+
+/* APAGANDO SETAS POIS A DA DIREITA NÁO FUNCIONA */
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* Estilização dos cursos na mostragem geral */
+
+.label-chamada-div h6 {
+  color: var(--tertiary-color);
+}
+
+.content-rating {
+  display: none;
+}
+
+.sellprice {
+  display: none;
+}
+
+.price-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Padding aumentado na mostragem de cursos */
+.courses19 {
+  padding: 1rem 0;
+}
+
+/* Estilização de Depoimentos */
+.testimony-slider-header {
+  margin-bottom: 2rem;
+}
+
+.content-background {
+  display: none;
+}
+
+.testimonials3 {
+  padding: 1.5rem 0;
+  background-image: url("/imagemsite/30/books-falling-bg.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Estilização do Slider/Capa */
+.carousel-item {
+  height: 100vh;
+}
+
+.com-mobile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: left !important;
+  max-width: 40% !important;
+  padding: 3rem 1rem 0 2rem !important;
+  margin: 0 !important;
+  height: 100% !important;
+}
+
+.carousel-caption h4 {
+  font-size: clamp(2.5rem, 4.5vw + 1rem, 4rem) !important;
+}
+
+.carousel-caption h5 {
+  font-size: 0.875rem !important;
+  width: 100%;
+}
+
+#banner .btn-banner-clique {
+  width: 8rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-caption {
+    background-color: hsl(0, 0%, 0%, 0.6) !important;
+  }
+
+  .carousel-caption {
+    align-items: center;
+  }
+}
+/* Página de cursos */
+
+.products {
+  align-items: center !important;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.products .item {
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 0 calc(33.33% - 2rem) !important;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 220px;
+  max-width: 285px;
+}
+
+.products .item a {
+  order: 1;
+}
+
+.products .item .description {
+  order: 3;
+  font-size: 1rem !important;
+  color: var(--secondary-color) !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  min-height: auto !important;
+}
+
+.products .item .name {
+  order: 2;
+  font-weight: bold;
+  font-size: 1.5rem;
+  min-height: auto;
+  margin: 1rem 0 0.125rem 0;
+}
+
+.products .item .product-box-price {
+  margin: 1.5rem 0;
+}
+
+.products .item .product-box-price {
+  order: 4;
+}
+
+.products .item .product-box-price .product-font-1,
+.products .item .product-box-price .product-font-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.products .item .product-box-price .product-font-2 {
+  margin: 0.2rem 0 0 0;
+  font-size: 1.1rem;
+  color: hsl(0 0 20%);
+}
+
+.products .item .product-box-price .product-font-2 .product-font-3 {
+  color: hsl(0 0 20%);
+  font-size: 1.4rem;
+}
+
+.products .item .div-botao {
+  order: 5;
+}
+
+.products .item .div-botao .product-font-4 {
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.products .item .div-botao .btn-enroll {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 950px) {
+  .item {
+    flex: 0 0 calc(50% - 2rem) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    flex: 0 0 100%;
+  }
+}
+
+.courses1 h5 {
+  font-weight: bold !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 53px !important;
+}
+/* Barra lateral dos cursos */
+
+#courses .container .row {
+  gap: 1rem;
+}
+
+#courses .container .row .d-none:first-child {
+  padding: 0;
+  flex: calc(20% - 1rem);
+  background-color: hsl(0, 0%, 90%);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+#courses .container .product-category {
+  margin: 0;
+}
+
+#courses .container .product-category h2 {
+  background-color: transparent;
+  border: 2.5px solid hsl(0 0 75%);
+  border-width: 1px 0 1px 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 1rem 1rem;
+}
+
+#courses .container .product-category h2:hover {
+  background-color: hsl(0 0 40%);
+}
+
+#courses .container .product-category a {
+  color: hsl(0 0 30%);
+  width: 100%;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+#courses .container .product-category h2:hover a {
+  color: white;
+}
+
+/* Página de Curso Específico */
+
+.container h1 {
+  font-weight: 900 !important;
+  font-size: 2.5rem !important;
+  color: var(--primary-color) !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.container h3 {
+  width: 100%;
+  font-weight: bolder;
+  color: var(--secondary-color) !important;
+  font-weight: 400 !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: white !important;
+  font-weight: bold;
+  background-color: var(--quinary-color) !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--quaternary-color) !important;
+}
+
+.nav-tabs .nav-link {
+  color: hsl(0, 0%, 40%) !important;
+  border-color: hsl(0, 0%, 40%) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--sexta-color);
+  padding: 0.5rem 1.2rem !important;
+}
+
+.tab-content {
+  border: 2px solid var(--quaternary-color) !important;
+  border-radius: 0 16px 16px 16px;
+  padding: 1.5rem !important;
+  color: hsl(0 0 30%);
+}
+
+.tab-content div {
+  padding: 0 !important;
+}
+
+.product-body .container .row > .col-xs-12:nth-child(1) {
+  padding: 0 3rem 0 0;
+}
+
+.product-body .container .row > .order-md-last:nth-child(2) {
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 85%);
+  padding: 0 0 3rem 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.conteudoPrincipal h3 {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  padding: 0 !important;
+  padding: 1rem;
+}
+
+.conteudoPrincipal p {
+  margin-bottom: 1.5rem !important;
+}
+
+.conteudoPrincipal ul {
+  margin-bottom: 1.5rem !important;
+  list-style: inside;
+}
+
+.tab-pane .row {
+  gap: 2rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-teacher {
+  margin: auto !important;
+  border: none !important;
+}
+
+.card-teacher img {
+  border-radius: 5px;
+}
+
+.card-teacher h4 {
+  color: var(--primary-color) !important;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.product-img {
+  border-radius: 20px;
+  order: 1;
+  margin-bottom: 1rem !important;
+}
+
+.product-body
+  .col-xl-3
+  > div[style="border: #000000 1px solid;margin-top: 10px;"] {
+  order: 2;
+  border: none !important;
+  width: 100%;
+}
+
+.product-body
+  .col-xl-3
+  > div[style="border: #000000 1px solid;margin-top: 10px;"]
+  .font-weight-bold {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+}
+
+.product-body
+  .col-xl-3
+  > div[style="border: #000000 1px solid;margin-top: 10px;"]
+  .font-product-group1 {
+  color: var(--primary-color) !important;
+}
+
+.share-button {
+  display: none !important;
+}
+
+.product-descont-box {
+  display: none !important;
+}
+
+.product-value-box {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+  background-color: transparent !important;
+}
+
+.product-value-box,
+.btn-product {
+  padding: 0 1rem !important;
+}
+
+.product-value-box div:nth-of-type(1) {
+  order: 2;
+  font-size: 1rem !important;
+}
+
+.product-value-box div:nth-of-type(1) a {
+  font-weight: 400 !important;
+  color: var(--secondary-color);
+  line-height: 0.7 !important;
+  font-size: 1rem !important;
+}
+
+.product-value-box div:nth-of-type(2) {
+  order: 1;
+}
+
+.product-value-box div:nth-of-type(2) a {
+  font-weight: bold;
+  color: var(--primary-color) !important;
+  display: inline-block;
+  text-indent: -240px;
+  overflow: hidden;
+  width: auto !important;
+}
+
+.product-body .btn-product {
+  order: 3;
+  width: auto !important;
+  padding: 0.7rem 2rem !important;
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  border-radius: 5px !important;
+  margin-top: 2rem !important;
+}
+
+.product-body .btn-product i {
+  font-size: 1.7rem !important;
+}
+
+.product-testimonial {
+  display: none;
+}
+
+.product-testimonial-content {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-9 {
+    flex: 0 0 70%;
+  }
+  .col-xl-3 {
+    flex: 0 0 30%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1124px) {
+  .product-value-box div:nth-of-type(2) a {
+    font-size: 25px !important;
+    text-indent: -200px;
+  }
+
+  /* .col-md-4 {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+  } */
+}
+
+@media only screen and (max-width: 767px) {
+  .product-body h3 {
+    width: 100%;
+  }
+
+  .tab-content .row .col-md-3 {
+    padding: 0 2rem !important;
+  }
+
+  .product-body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-body .container .row {
+    padding: 0 1rem;
+  }
+
+  .product-body .container .row .col-xs-12:nth-of-type(1) {
+    padding: 0 !important;
+  }
+
+  .product-body .container .row .order-md-last:nth-of-type(2) {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    flex: inherit !important;
+  }
+
+  .product-value-box div:nth-of-type(2) {
+    margin: 0 auto !important;
+  }
+
+  .product-value-box div:nth-of-type(2) a {
+    font-size: 2rem !important;
+    text-indent: -260px !important;
+  }
+
+  .product-body .btn-product {
+    padding: 0.7rem 1.5rem !important;
+  }
+
+  .tab-content > .active {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tab-pane .row {
+    padding-top: 2rem;
+  }
+}
+
+/* Não é possível trocar a posição do texto, já que ele já possui a tag de !important */
+
+/* @media only screen and (max-width: 575px) {
+  #banner .carousel-caption {
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+} */
+
+/* Cursos mostragem em Cards */
+
+@media (max-width: 767px) {
+  .class-list-content .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  .courses19.primary .class-list-content .row {
+    margin: 0 !important;
+  }
+
+  .courses19.primary .class-list-content .col-content-outer {
+    padding: 0;
+  }
+
+  .courses19.primary .class-list-content .col-content-outer > .row {
+    display: flex !important;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Cadastre-se Form */
+
+.registration-box,
+#divContact1 {
+  background-color: transparent !important;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-box .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.control-label {
+  font-weight: 500;
+  color: hsl(0, 0%, 5%);
+}
+
+.form-control {
+  background-color: hsl(0, 0%, 90%);
+  color: black;
+}
+
+.form-control:focus {
+  background-color: hsl(0, 0%, 95%);
+  color: black;
+  border-color: var(--quaternary-color);
+  box-shadow: 0 0 0 0.2rem hsl(324, 63%, 44%, 0.25);
+}
+
+.error {
+  color: hsl(0, 100%, 75%);
+}
+
+#divContact2 h3 {
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+}
+
+#divContact2 p {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+
+footer .div-address {
+  line-height: 1rem;
+}
+
+footer .row {
+  margin: 0 !important;
+}
+
+footer .col {
+  min-width: 9rem;
+}
+
+.footer-line2 .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-line2 .row .col-md-12:nth-child(2) {
+  display: none;
+}
+
+footer .icnRedes {
+  flex-wrap: nowrap;
+}
+
+.footer-line2 .col-lg-8 {
+  width: auto;
+  flex: none;
+  max-width: unset;
+}
+
+.footer-line2 i {
+  padding-right: 10px;
+}
+
+/* Classes personalizadas */
+
+.gradient-text-default {
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 173, 1) 0%,
+    rgba(182, 39, 190, 1) 35%,
+    rgba(91, 88, 216, 1) 58%,
+    rgba(0, 207, 160, 1) 82%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
