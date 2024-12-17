@@ -26,6 +26,11 @@ h6 {
   color: var(--primary-color);
 }
 
+a:hover {
+  text-decoration: none;
+  color: hsl(0 0 90%) !important;
+}
+
 /* Customização de Blocos únicos */
 
 /* Cabeçalho */
@@ -36,6 +41,10 @@ h6 {
   padding: 0 0 !important;
   margin-top: 8px !important;
   margin-bottom: 5px !important;
+}
+
+.top-space .container .row .col-sm-6 .list-link {
+  list-style: none;
 }
 
 #top-menu {
@@ -63,6 +72,19 @@ h6 {
 .navbar-nav .nav-link {
   font-size: 14px !important;
   font-weight: 600;
+}
+
+.dropdown-menu {
+  background-color: hsl(0, 0%, 85%) !important;
+}
+
+.dropdown-menu li a {
+  font-weight: bold !important;
+}
+
+.navbar-nav li:has(ul.dropdown-menu.show) > a {
+  color: var(--quaternary-color) !important;
+  font-weight: bold !important;
 }
 
 /* .navbar-collapse {
@@ -180,6 +202,11 @@ h6 {
 
 #banner .btn-banner-clique {
   width: 8rem;
+  background: linear-gradient(
+    140deg,
+    rgba(171, 23, 112, 1) 0%,
+    hsl(324, 68%, 58%) 100%
+  );
 }
 
 @media only screen and (max-width: 767px) {
@@ -194,7 +221,7 @@ h6 {
 /* Página de cursos */
 
 .products {
-  align-items: center !important;
+  align-items: baseline;
   justify-content: center;
   gap: 2rem;
 }
@@ -212,6 +239,14 @@ h6 {
 
 .products .item a {
   order: 1;
+}
+
+.products .item .img-fluid {
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  max-width: 522px;
+  max-height: 381px;
 }
 
 .products .item .description {
@@ -268,6 +303,11 @@ h6 {
 
 .products .item .div-botao .btn-enroll {
   font-size: 1.125rem;
+  background: linear-gradient(
+    320deg,
+    rgba(171, 23, 112, 1) 0%,
+    hsl(324, 68%, 58%) 100%
+  );
 }
 
 @media (max-width: 950px) {
@@ -392,7 +432,11 @@ h6 {
 
 .product-body .container .row > .order-md-last:nth-child(2) {
   border-radius: 30px;
-  background-color: hsl(0, 0%, 85%);
+  background: radial-gradient(
+    circle,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(217, 217, 217, 1) 100%
+  );
   padding: 0 0 3rem 0 !important;
   display: flex;
   flex-direction: column;
@@ -410,6 +454,10 @@ h6 {
 
 .conteudoPrincipal p {
   margin-bottom: 1.5rem !important;
+}
+
+.conteudoPrincipal span {
+  font-size: 1rem !important;
 }
 
 .conteudoPrincipal ul {
@@ -519,8 +567,15 @@ h6 {
   padding: 0.7rem 2rem !important;
   font-size: 1.3rem !important;
   font-weight: bold;
+  border: none !important;
   border-radius: 5px !important;
   margin-top: 2rem !important;
+  background: rgb(171, 23, 112);
+  background: linear-gradient(
+    320deg,
+    rgba(171, 23, 112, 1) 0%,
+    hsl(324, 68%, 58%) 100%
+  );
 }
 
 .product-body .btn-product i {
@@ -692,6 +747,10 @@ h6 {
   color: hsl(0, 100%, 75%);
 }
 
+.footer2 .row {
+  gap: 1rem 0;
+}
+
 #divContact2 h3 {
   color: var(--primary-color) !important;
   font-weight: 500 !important;
@@ -704,7 +763,7 @@ h6 {
 /* Footer */
 
 footer .div-address {
-  line-height: 1rem;
+  line-height: 1rem !important;
 }
 
 footer .row {
