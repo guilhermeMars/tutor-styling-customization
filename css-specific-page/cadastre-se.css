@@ -1,0 +1,22 @@
+/* :root {
+  --primary-color: hsl(0, 0%, 20%);
+  --secondary-color: hsl(0, 0%, 60%);
+  --tertiary-color: hsl(0, 0%, 100%);
+  --quaternary-color: hsl(324, 63%, 44%);
+  --quinary-color: hsl(324, 63%, 42%);
+  --sexta-color: hsl(324, 63%, 44%, 10%);
+}; */
+
+.registration-box {
+  background-color: transparent;
+}
+
+.control-label {
+  font-weight: 500;
+  color: hsl(0, 0%, 5%);
+}
+
+.form-control {
+  background-color: hsl(0, 0%, 80%);
+  color: black;
+}

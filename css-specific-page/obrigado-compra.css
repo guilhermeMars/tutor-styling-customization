@@ -1,0 +1,37 @@
+/* :root {
+  --primary-color: hsl(0, 0%, 20%);
+  --secondary-color: hsl(0, 0%, 60%);
+  --tertiary-color: hsl(0, 0%, 100%);
+  --quaternary-color: hsl(324, 63%, 44%);
+  --quinary-color: hsl(324, 63%, 42%);
+  --sexta-color: hsl(324, 63%, 44%, 10%);
+} */
+
+.thank-you .container h2 {
+  font-size: clamp(2.5rem, 4.5vw + 1rem, 4rem) !important;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 0, 173, 1),
+    rgba(182, 39, 190, 1),
+    rgba(91, 88, 216, 1),
+    rgba(0, 207, 160, 1)
+  );
+  background-clip: text;
+  text-decoration: underline;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  border-radius: 2070px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,304 @@
+<section class="section">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .aq-text {
+      font-size: clamp(1.25rem, 1.3vw + 1rem, 2.2rem);
+      text-align: center;
+      font-weight: bolder !important;
+      line-height: 3.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .aq-text h2 {
+      font-size: clamp(1.9rem, 3.8vw + 1rem, 3rem) !important;
+      margin: 0 0.5rem;
+    }
+
+    .aq-full-wd {
+      background-color: var(--quaternary-color);
+      width: 100%;
+      padding: 2.5rem 0;
+    }
+
+    .aq-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1400px;
+      gap: 1rem;
+      margin: auto;
+    }
+
+    .aq-item {
+      background-color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      max-height: 3.5rem;
+      overflow: hidden;
+      transition: all 1.5s cubic-bezier(0.15, 0.29, 0.18, 1);
+      cursor: pointer;
+      width: 90%;
+    }
+
+    .aq-item:hover {
+      max-height: 20rem;
+    }
+
+    .aq-item-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .aq-item-title h4 {
+      font-weight: 500 !important;
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin: 0;
+    }
+
+    .aq-item-title img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .aq-item p,
+    .aq-item li {
+      color: hsl(0, 0%, 40%);
+      margin: 0 0.25rem;
+    }
+
+    .aq-item li {
+      list-style: inside;
+    }
+
+    @media (max-width: 866px) {
+      .aq-line-break {
+        max-height: 4.5rem;
+      }
+    }
+
+    @media (max-width: 521px) {
+      .aq-item {
+        padding: 0.8rem 0.5rem;
+      }
+
+      .aq-item-title {
+        min-height: 55px;
+        margin-bottom: 1rem;
+      }
+
+      .aq-item {
+        max-height: 5rem;
+      }
+
+      .aq-item-title h4 {
+        font-size: 1.15rem;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .aq-line-break {
+        max-height: 6rem !important;
+      }
+
+      .aq-line-break .aq-item-title {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+  <main>
+    <div class="aq-text">
+      <h2>
+        <span class="gradient-text-default">Dúvidas frequentes</span>: Saiba
+        tudo sobre sua pós
+      </h2>
+    </div>
+    <div class="aq-full-wd">
+      <div class="aq-flex">
+        <div class="aq-item">
+          <div class="aq-item-title">
+            <h4>Qual a duração da pós-graduação?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Os cursos tem duração de entre 12 e 24 meses, estruturado em blocos
+            de conteúdo, com uma carga horária total variando entre 360 e 500
+            horas.
+          </p>
+        </div>
+        <div class="aq-item">
+          <div class="aq-item-title">
+            <h4>Quais os requisitos para iniciar a pós?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+            <!-- <i class="fa-solid fa-angle-down"></i> -->
+          </div>
+          <p>
+            Para se inscrever, é necessário ter concluído a graduação em
+            medicina veterinária ou estar comprovadamente no último período do
+            curso de medicina veterinária.
+          </p>
+        </div>
+        <div class="aq-item">
+          <div class="aq-item-title">
+            <h4>Qual a dinâmica das aulas?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            As aulas são ministradas em módulos dinâmicos, com uma combinação de
+            teoria e prática voltadas para o cotidiano da medicina veterinária.
+            A metodologia do curso é pensada para proporcionar uma experiência
+            de aprendizado imersiva e prática, com suporte contínuo dos
+            supervisores pedagógicos e dos facilitadores, bem como acesso a
+            conteúdos exclusivos.
+          </p>
+        </div>
+        <div class="aq-item">
+          <div class="aq-item-title">
+            <h4>Tem certificação?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Sim! Ao concluir a pós-graduação, o aluno receberá um certificado
+            com chancela da Universidade UNIBF, instituição com nota máxima pelo
+            MEC, garantindo um selo de qualidade amplamente reconhecido. Esse
+            certificado é valorizado pelo mercado e tem o respaldo de uma das
+            melhores escolas de pós-graduação EAD de Campinas, proporcionando
+            credibilidade e distinção ao seu currículo.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>
+              Como funcionam as aulas teóricas na modalidade semipresencial?
+            </h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Na modalidade semipresencial, as aulas teóricas são transmitidas ao
+            vivo através da plataforma vinculada ao portal do aluno,
+            proporcionando uma experiência de aprendizado interativa e dinâmica.
+            Durante as aulas, os alunos têm a oportunidade de interagir em tempo
+            real com professores e supervisores pedagógicos, tirando dúvidas e
+            participando de discussões. Para garantir a presença e o
+            comprometimento dos alunos, utilizamos um sistema de comprovação
+            facial, que valida a identidade e presença do aluno de maneira
+            prática e segura. Essa tecnologia permite que o aluno participe da
+            aula em qualquer lugar, mantendo a qualidade e o engajamento da
+            formação. As aulas são planejadas para oferecer uma experiência
+            imersiva e facilitar a troca de conhecimentos entre os alunos e
+            professores.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>
+              Como funcionam as aulas práticas na modalidade semipresencial?
+            </h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            As aulas práticas na modalidade semipresencial são estruturadas para
+            proporcionar uma experiência de aprendizado imersiva e aplicada,
+            combinando teoria com prática intensa em ambientes reais e de
+            simulação. As atividades ocorrem em nosso hospital modelo, onde os
+            alunos têm acesso a equipamentos modernos e podem vivenciar de perto
+            as rotinas e procedimentos da prática veterinária. Além disso,
+            contamos com ambientes de simulação que permitem que os alunos
+            desenvolvam habilidades técnicas com segurança e precisão, simulando
+            situações comuns e complexas que encontrarão no dia a dia
+            profissional. As aulas práticas também incluem sessões hands-on com
+            peças anatômicas, onde os alunos aplicam diretamente o que
+            aprenderam, sempre com o acompanhamento de professores especialistas
+            que orientam e corrigem cada etapa do processo.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>
+              Em quanto tempo meu certificado fica pronto após a conclusão do
+              curso?
+            </h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Após a conclusão do curso, o certificado é emitido em até 90 dias
+            úteis, seguindo as normas institucionais e as leis brasileiras da
+            educação. Para a liberação do certificado, o aluno deve ter obtido
+            uma nota mínima de 7 em todas as avaliações e quitado todos os
+            valores devidos, especialmente para quem optou pelo parcelamento em
+            até 30 vezes. Esses requisitos garantem que o processo de
+            certificação ocorra de maneira regular e em conformidade com os
+            padrões de qualidade e reconhecimento exigidos.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>A pós-graduação exige a realização de um TCC?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Sim, a pós-graduação exige a elaboração de um Trabalho de Conclusão
+            de Curso (TCC), que deve abordar um caso clínico de atendimento na
+            especialidade. Esse trabalho é projetado para promover a fixação dos
+            componentes teóricos e práticos aprendidos ao longo do curso, além
+            de ter o potencial de destaque em publicações científicas.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>Como Obter seus Micro Certificados de Cada Módulo do Curso?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Na Ebramev, os micro certificados são oferecidos após a conclusão de
+            módulos ou cursos curtos. Para obtê-los, é necessário comprovar 75%
+            de presença e realizar as provas gerais de módulo. Esses
+            certificados atestam as conquistas e habilidades adquiridas pelos
+            alunos e podem ser incluídos em currículos e perfis profissionais.
+            Os micro certificados proporcionam flexibilidade para a
+            especialização em tópicos de interesse, além de reconhecer as
+            habilidades adquiridas. Eles servem como um complemento valioso à
+            formação acadêmica, demonstrando o compromisso com a educação
+            continuada.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>As aulas gravadas computam presença?</h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Sim, as aulas gravadas computam presença para a obtenção dos micro
+            certificados e presença obrigatória da sua pós-graduação. A
+            visualização dessas aulas conta para o percentual necessário de 75%
+            de presença.
+          </p>
+        </div>
+        <div class="aq-item aq-line-break">
+          <div class="aq-item-title">
+            <h4>
+              As aulas gravadas oferecem interação com supervisores pedagógicos
+              e facilitadores?
+            </h4>
+            <img src="/imagemsite/78/Seta-icon.svg" alt="Seta Baixo" />
+          </div>
+          <p>
+            Não, as aulas gravadas não oferecem interação em tempo real com
+            supervisores pedagógicos e facilitadores. A interação e o suporte
+            direto ocorrem apenas durante as aulas ao vivo. É importante
+            participar dessas aulas para aproveitar ao máximo a orientação dos
+            professores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

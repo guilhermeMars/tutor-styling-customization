@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="variables.css" />
+  </head>
+  <body>
+    <section class="section">
+      <style>
+        .am {
+          max-width: 1400px;
+          margin: auto;
+        }
+
+        .am-title {
+          color: var(--primary-color);
+          margin-bottom: 2rem;
+        }
+
+        .am-title h2 {
+          font-size: clamp(1.5rem, 4vw + 1rem, 3.5rem);
+          font-weight: bolder !important;
+          text-align: center;
+        }
+
+        .am-flex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto;
+        }
+
+        .am-box {
+          flex: 1;
+          height: calc((100% - 1rem) / 3);
+          background-color: white;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.2);
+          display: flex;
+          align-items: stretch;
+          justify-content: center;
+        }
+
+        .am-icon {
+          background-color: var(--quaternary-color);
+          flex: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0.7rem 0.5rem;
+          gap: 5px;
+        }
+
+        .am-icon img {
+          max-width: 5rem;
+        }
+
+        .am-icon p {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+        }
+
+        .am-text-icon {
+          padding: 1rem 2rem;
+          flex: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 725px) {
+          .am-flex {
+            gap: 2rem;
+            padding: 0;
+          }
+
+          .am-box {
+            flex-direction: column;
+            width: 90%;
+          }
+
+          .am-text-icon {
+            padding: 1rem 1.5rem;
+          }
+
+          .am-text-icon p {
+            font-size: 1rem;
+          }
+        }
+      </style>
+      <main class="am">
+        <div class="am-title">
+          <h2>
+            Métodos de <span class="gradient-text-default">avaliação</span>
+          </h2>
+        </div>
+        <div class="am-flex">
+          <div class="am-box">
+            <div class="am-icon">
+              <img src="../media/Provas-icon.svg" alt="Provas Icon" />
+              <p>Provas</p>
+            </div>
+            <div class="am-text-icon">
+              <p>
+                Na EBRAMEV, as avaliações são todas inclusivas e interativas,
+                onde nosso método visa avaliar nosso aluno promovendo discussões
+                abertas de casos da rotina ou até mesmo, casos simulativos,
+                abrangendo um consenso através de debates mediados por nossos
+                coordenadores na participação dos alunos de uma maneira geral e
+                integrada.
+              </p>
+            </div>
+          </div>
+          <div class="am-box">
+            <div class="am-icon">
+              <img src="../media/TCC-icon.svg" alt="TCC Icon" />
+              <p>TCC</p>
+            </div>
+            <div class="am-text-icon">
+              <p>
+                Em conformidade com a portaria do MEC para cursos de
+                pós-graduação, o TCC - Trabalho de Conclusão de Curso - é
+                opcional. Sobremaneira, nossos coordenadores sempre incentivam
+                nossos alunos a realizarem o TCC, de modo que este trabalho seja
+                devidamente acompanhado e relatado em sua certificação.
+              </p>
+            </div>
+          </div>
+          <div class="am-box">
+            <div class="am-icon">
+              <img src="../media/Estágio-icon.svg" alt="Estágio Icon" />
+              <p>Estágio</p>
+            </div>
+            <div class="am-text-icon">
+              <p>
+                Os estágios em nossa instituição não são obrigatórios. Aos
+                alunos que quiserem aderir, podem verificar a possibilidade de
+                estágio na rotina diretamente com os professores convidados e/ou
+                com os coordenadores da pós-graduação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
