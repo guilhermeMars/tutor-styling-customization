@@ -229,7 +229,7 @@ a:hover {
 .products .item {
   display: flex;
   box-sizing: border-box;
-  flex: 0 0 calc(33.33% - 2rem) !important;
+  flex: 0 0 calc(33.33% - 2rem);
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
@@ -311,14 +311,16 @@ a:hover {
 }
 
 @media (max-width: 950px) {
-  .item {
-    flex: 0 0 calc(50% - 2rem) !important;
+  .products .item {
+    flex: 0 0 calc(50% - 2rem);
   }
 }
 
 @media (max-width: 500px) {
-  .item {
+  .products .item {
     flex: 0 0 100%;
+    max-width: none;
+    margin: 0 2rem;
   }
 }
 
@@ -336,6 +338,11 @@ a:hover {
   gap: 1rem;
 }
 
+#courses .container .row .d-none {
+  display: flex !important;
+  flex-direction: column;
+}
+
 #courses .container .row .d-none:first-child {
   padding: 0;
   flex: calc(20% - 1rem);
@@ -344,6 +351,14 @@ a:hover {
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid hsl(0, 0%, 80%);
+}
+
+.product-category:has(> div) {
+  order: 1; /* Exemplo de estilo */
+}
+
+.product-category:not(:has(> div)) {
+  order: 2; /* Exemplo de estilo */
 }
 
 #courses .container .product-category {
@@ -358,11 +373,40 @@ a:hover {
   text-transform: capitalize;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 0 3px 0 hsl(0 0 75%);
   cursor: pointer;
   padding: 1rem 1rem;
 }
 
 #courses .container .product-category h2:hover {
+  background-color: hsl(0 0 40%);
+}
+
+#courses .container .product-category div {
+  padding: 0;
+}
+
+#courses .container .product-category div a {
+  background-color: hsl(0 0 80%);
+  border: 2.5px solid hsl(0 0 65%);
+  border-width: 1px 0.5px;
+  font-size: 0.875rem;
+  text-transform: lowercase;
+  font-weight: 400 !important;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  display: block;
+  width: 100%;
+}
+
+/* Apenas a primeira letra fica maiúscula */
+#courses .container .product-category div a::first-letter {
+  text-transform: uppercase;
+}
+
+#courses .container .product-category div a:hover {
   background-color: hsl(0 0 40%);
 }
 
@@ -373,7 +417,8 @@ a:hover {
   transition: color 0.3s ease-in-out;
 }
 
-#courses .container .product-category h2:hover a {
+#courses .container .product-category h2:hover a,
+#courses .container .product-category div:hover a {
   color: white;
 }
 
