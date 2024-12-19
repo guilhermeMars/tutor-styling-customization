@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .text-image-div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Poppins";
+          width: 80%;
+          margin: auto;
+        }
+
+        .side-text {
+          flex: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .titulo-side-image {
+          font-size: 2.7rem;
+          color: hsl(0, 0%, 10%);
+          flex: 50%;
+          text-align: left;
+          font-weight: bold;
+          line-height: 4.5rem;
+        }
+
+        .numbers-show-up {
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+          margin-top: 1rem;
+        }
+
+        .numbers-show-up h5 {
+          background: linear-gradient(
+            153deg,
+            rgba(215, 74, 158, 1) 0%,
+            rgba(182, 42, 126, 1) 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 3.3rem;
+        }
+
+        .logo-gradient-text {
+          background: linear-gradient(
+            90deg,
+            rgba(190, 20, 174, 1) 0%,
+            rgba(131, 54, 187, 1) 23%,
+            rgba(7, 156, 238, 1) 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .side-image {
+          flex: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .side-image img {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: 1025px) {
+          .text-image-div {
+            width: 100%;
+            padding: 0 1rem;
+          }
+
+          .titulo-side-image {
+            font-size: 3rem;
+          }
+        }
+
+        @media only screen and (max-width: 767px) {
+          .text-image-div {
+            flex-direction: column;
+          }
+
+          .titulo-side-image {
+            font-size: 3rem;
+          }
+        }
+      </style>
+      <div class="text-image-div">
+        <div class="side-text">
+          <h3 class="titulo-side-image">
+            Sobre o Hospital Veterinário Ebramev
+          </h3>
+          <p>
+            No Ebramev, oferecemos cuidados veterinários especializados com
+            tecnologia de ponta e uma equipe dedicada para garantir o melhor
+            tratamento aos nossos pacientes em casos de alta complexidade.
+          </p>
+          <div class="numbers-show-up">
+            <div>
+              <h5>+20</h5>
+              <p>Especialidades</p>
+            </div>
+            <div>
+              <h5>+10</h5>
+              <p>anos de experiência em doentes graves</p>
+            </div>
+          </div>
+        </div>
+        <div class="side-image">
+          <img
+            src="/imagemsite/1/Imagem-Teste-Ideias.jpg"
+            alt="Side Image div"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
