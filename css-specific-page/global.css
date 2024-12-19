@@ -31,6 +31,24 @@ a:hover {
   color: hsl(0 0 90%) !important;
 }
 
+/* Scroll */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--quaternary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--quinary-color);
+}
+
 /* Customização de Blocos únicos */
 
 /* Cabeçalho */
@@ -125,6 +143,12 @@ a:hover {
 .carousel-control-prev,
 .carousel-control-next {
   display: none;
+}
+
+/* Estilização da imagem com texto */
+.texto-imagem img {
+  object-fit: cover !important;
+  border-radius: 1rem;
 }
 
 /* Estilização dos cursos na mostragem geral */
@@ -351,6 +375,8 @@ a:hover {
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid hsl(0, 0%, 80%);
+  position: sticky;
+  top: 1rem;
 }
 
 .product-category:has(> div) {
@@ -367,6 +393,12 @@ a:hover {
 
 #courses .container .product-category h2 {
   background-color: transparent;
+  padding: 0;
+}
+
+#courses .container .product-category h2 a {
+  display: block;
+  width: 100%;
   border: 2.5px solid hsl(0 0 75%);
   border-width: 1px 0 1px 0;
   font-size: 1rem;
@@ -378,7 +410,7 @@ a:hover {
   padding: 1rem 1rem;
 }
 
-#courses .container .product-category h2:hover {
+#courses .container .product-category h2 a:hover {
   background-color: hsl(0 0 40%);
 }
 
@@ -488,6 +520,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: sticky;
+  top: 1rem;
 }
 
 .conteudoPrincipal h3 {
@@ -690,6 +724,7 @@ a:hover {
     width: 80%;
     margin: 0 auto 2rem auto;
     flex: inherit !important;
+    position: static;
   }
 
   .product-value-box div:nth-of-type(2) {
