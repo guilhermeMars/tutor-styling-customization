@@ -379,6 +379,12 @@ a:hover {
   top: 1rem;
 }
 
+@media (max-width: 767px) {
+  #courses .container .row .d-none:first-child {
+    position: static;
+  }
+}
+
 .product-category:has(> div) {
   order: 1; /* Exemplo de estilo */
 }
@@ -732,8 +738,8 @@ a:hover {
   }
 
   .product-value-box div:nth-of-type(2) a {
-    font-size: 2rem !important;
-    text-indent: -260px !important;
+    font-size: 1.8rem !important;
+    text-indent: -230px !important;
   }
 
   .product-body .btn-product {
@@ -875,6 +881,10 @@ footer .icnRedes {
 
 .footer-line2 i {
   padding-right: 10px;
+}
+
+#divFooterDevelop {
+  display: none;
 }
 
 /* Classes personalizadas */
