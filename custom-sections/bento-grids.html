@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="variables.css" />
+  </head>
+  <body>
+    <section>
+      <style>
+        :root {
+          --bento-g-radius: 20px;
+        }
+
+        .bento-grid {
+          max-width: 1600px;
+        }
+
+        .bento-g-2 {
+          display: flex;
+          align-items: stretch;
+          justify-content: stretch;
+        }
+
+        .bento-g-2:nth-child(1) {
+          background-color: #5d4296;
+          color: white;
+          border-radius: var(--bento-g-radius);
+          flex: 2;
+        }
+
+        .bento-g-2:nth-child(2) {
+          background-color: #d3cae8;
+          border-radius: var(--bento-g-radius);
+          flex: 1;
+        }
+
+        .bento-g-3 {
+          display: flex;
+          align-items: stretch;
+          justify-content: stretch;
+        }
+
+        .bento-g-3:nth-child(1) {
+          flex: 2;
+          display: flex;
+          align-items: stretch;
+          justify-content: stretch;
+        }
+
+        .bento-g-3:nth-child(1) div:nth-child(1) {
+          flex: 5;
+          border-radius: var(--bento-g-radius);
+          overflow: hidden;
+        }
+
+        .bento-g-3:nth-child(1) div:nth-child(1) img {
+          width: 100%;
+          max-width: 1rem;
+          object-fit: cover;
+        }
+
+        .bento-g-3:nth-child(1) div:nth-child(2) {
+          flex: 4;
+          border-radius: var(--bento-g-radius);
+          overflow: hidden;
+          background-color: #d3cae8;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .bento-g-3:nth-child(2) {
+          flex: 1;
+          display: flex;
+          align-items: stretch;
+          justify-content: stretch;
+        }
+
+        .bento-g-3:nth-child(2) div:nth-child(1) {
+          flex: 1;
+          border-radius: var(--bento-g-radius);
+          background-color: #5d4296;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .bento-g-3:nth-child(2) div:nth-child(2) {
+          border-radius: var(--bento-g-radius);
+          background: rgb(181, 166, 216);
+          background: linear-gradient(
+            315deg,
+            rgba(181, 166, 216, 1) 12%,
+            rgba(211, 202, 232, 1) 100%
+          );
+        }
+
+        .bento-g-3:nth-child(2) div:nth-child(2) h4 {
+          color: white;
+          font-size: 2.5rem;
+          font-style: italic;
+        }
+
+        .bento-g-3:nth-child(3) {
+          flex: 2;
+          display: flex;
+          align-items: stretch;
+          justify-content: stretch;
+          border-radius: var(--bento-g-radius);
+          overflow: hidden;
+        }
+
+        .bento-g-3:nth-child(3) img {
+          width: 100%;
+          object-fit: cover;
+        }
+      </style>
+      <main class="bento-grid">
+        <div class="bento-g-2">
+          <div>
+            <h1>A união veterinária faz a força.</h1>
+          </div>
+          <div>
+            <img src="media/ANESTCARE-BR.png" alt="Anestcare Brazil" />
+            <img src="media/Dermatonline.png" alt="Dermato Online" />
+            <img src="media/COBETIV.png" alt="Cobetiv" />
+          </div>
+        </div>
+        <div class="bento-g-3">
+          <div>
+            <img
+              src="media/bento-g poltronas.png"
+              alt="Imagem Conversa Poltronas"
+            />
+            <div class="cat-dog-div">
+              <img src="media/bento-g cat.png" alt="Cat image" />
+              <img src="media/bento-g dog.png" alt="Dog" />
+            </div>
+          </div>
+          <div>
+            <div class="white-ebramev">
+              <img src="media/White Logo.svg" alt="Ebramev Logo Branco" />
+            </div>
+            <div class="titles-div">
+              <h4>Anestesiologia</h4>
+              <h4>Dermatologia</h4>
+              <h4>Terapia Intensiva</h4>
+            </div>
+          </div>
+          <div>
+            <img src="media/bento-g chico.png" alt="Foto Francisco Mello" />
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
