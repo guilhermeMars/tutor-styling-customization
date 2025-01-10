@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quality div</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+
+        .quality-full-width {
+          width: 100%;
+          background-color: hsl(0, 0%, 90%);
+          display: flex;
+          justify-content: center;
+        }
+
+        .quality-main-div {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+          max-width: 1100px;
+          height: 100%;
+          padding: 4rem 2rem;
+        }
+
+        .quality-card {
+          background-color: white;
+          min-width: 250px;
+          width: calc(30% - 5%);
+          height: 17rem;
+          padding: 1.5rem 1.3rem;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.8rem;
+          box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .quality-icon {
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .quality-card-title {
+          font-size: 1.2rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .quality-card-description {
+          font-size: 0.9rem;
+          color: hsl(0, 0%, 10%);
+        }
+      </style>
+      <div class="quality-full-width">
+        <main class="quality-main-div">
+          <div class="quality-card">
+            <div class="quality-icon">
+              <img src="../media/Impacto Icon.svg" alt="Impacto Icon" />
+            </div>
+            <h5 class="quality-card-title">Conteúdo de alto impacto</h5>
+            <p class="quality-card-description">
+              Traga suas perguntas e saia com respostas que ampliarão seus
+              horizontes
+            </p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-icon">
+              <img
+                src="../media/Especialistas Icon.svg"
+                alt="Especialistas icon"
+              />
+            </div>
+            <h5 class="quality-card-title">Troca com Especialistas</h5>
+            <p class="quality-card-description">
+              Cada palestrante é um líder em seu campo, com experiências reais e
+              dicas práticas para sua trajetória.
+            </p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-icon">
+              <img src="../media/Comunidade Icon.svg" alt="Comunidade Icon" />
+            </div>
+            <h5 class="quality-card-title">Conexão em Comunidade</h5>
+            <p class="quality-card-description">
+              Este é o momento para trocar ideias com outros profissionais e
+              construir uma rede de contatos poderosa.
+            </p>
+          </div>
+        </main>
+      </div>
+    </section>
+  </body>
+</html>
