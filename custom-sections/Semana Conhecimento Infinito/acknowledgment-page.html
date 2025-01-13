@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+
+        .thx-main {
+          background: rgb(242, 242, 242);
+          background: linear-gradient(
+            125deg,
+            rgba(242, 242, 242, 1) 0%,
+            rgba(215, 215, 215, 1) 100%
+          );
+          min-height: 100vh;
+        }
+
+        .thx-max-width {
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 2rem;
+          max-width: 1000px;
+          padding: 6rem 1rem 0 1rem;
+        }
+
+        .thx-title {
+          font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+          font-weight: bold;
+          background: linear-gradient(
+            126deg,
+            rgba(235, 89, 176, 1) 0%,
+            rgba(182, 42, 126, 1) 50%,
+            rgba(186, 37, 189, 1) 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .thx-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 0.8rem 2rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+          background: rgb(62, 168, 62);
+          background: linear-gradient(
+            90deg,
+            rgba(62, 168, 62, 1) 0%,
+            rgba(128, 196, 127, 1) 100%
+          );
+          border-radius: 5px;
+          transition: filter ease-in-out 0.2s;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .thx-button:hover {
+          filter: brightness(105%);
+        }
+
+        .thx-button img {
+          width: 2rem;
+        }
+      </style>
+      <main class="thx-main">
+        <div class="thx-max-width">
+          <h1 class="thx-title">Obrigado por sua inscrição!</h1>
+          <p class="thx-description">
+            Seja bem-vindo a semana do conhecimento infinito! Clique no botão
+            abaixo e acesse o <strong>grupo do WhatsApp</strong>, para ter
+            acesso aos links das palestras e a infomações exclusivas
+          </p>
+          <a
+            href="https://chat.whatsapp.com/JDUBc6GdwpYEEZizuXwP6Y"
+            target="_blank"
+            class="thx-button"
+            ><img
+              src="../media/whatsapp-logo-white.svg"
+              alt="WhatsApp Icon"
+            />Grupo exclusivo</a
+          >
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
