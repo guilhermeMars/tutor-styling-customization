@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+
+        .main-title {
+          margin-bottom: 1rem;
+        }
+
+        .main-title h2 {
+          font-size: 3.4rem;
+          text-align: center;
+        }
+
+        .material-list {
+          background-color: #b62a7e;
+          width: 100%;
+          padding: 2rem 0;
+        }
+
+        .material-list-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          margin: auto;
+          padding: 0 1rem;
+          max-width: 1300px;
+        }
+
+        .material-list-wrapper div {
+          background-color: white;
+          border-radius: 5px;
+          padding: 0.75rem 1rem;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: transform 0.2s ease-in-out;
+        }
+
+        .material-list-wrapper div:hover {
+          transform: scale(1.01);
+        }
+
+        .material-list-wrapper div a {
+          text-decoration: none;
+          color: black;
+        }
+      </style>
+      <main>
+        <div class="main-title">
+          <h2>Conteúdo programático e referência</h2>
+        </div>
+        <div class="material-list">
+          <div class="material-list-wrapper">
+            <!-- Dependendo do tamanho do título, talvez valha a pena fazer duas div's lado a lado -->
+            <div>
+              <a href="#" target="_blank">Anestcare</a>
+            </div>
+            <div>
+              <a href="#" target="_blank">Emergência e Uti</a>
+            </div>
+            <div>
+              <a href="#" target="_blank">Geriatria</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
