@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <style>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        * {
+          margin: 0;
+        }
+        .practices-text-div {
+          font-family: "Poppins";
+          text-align: left;
+          font-weight: bold;
+          text-align: center;
+          max-width: 1500px;
+          margin: auto;
+        }
+        .practices-text-div h2 {
+          color: hsl(0, 0%, 10%);
+          font-size: clamp(2rem, 4vw + 1rem, 4rem);
+          padding: 0 2rem;
+          margin-bottom: 0.75rem;
+        }
+        .practices-text-div h5 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: hsl(0, 0%, 35%);
+          margin-bottom: 1.5rem;
+        }
+        .wrapper {
+          width: 90%;
+          max-width: 1536px;
+          margin-inline: auto;
+          position: relative;
+          height: var(--height);
+          margin-top: 1rem;
+          overflow: hidden;
+          mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0)
+          );
+        }
+        @keyframes scrollLeft {
+          to {
+            left: calc((var(--width) + 20px) * -1);
+          }
+        }
+        @keyframes scrollRight {
+          to {
+            right: calc((var(--width) + 24px) * -1);
+          }
+        }
+        .item {
+          width: var(--width);
+          height: var(--height);
+          position: absolute;
+          display: flex;
+          align-items: center;
+          animation-duration: var(--speed);
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-delay: calc(
+            var(--speed) / var(--quantity) * (var(--quantity) - var(--position)) *
+              -1
+          );
+        }
+        .scrollleft .item {
+          left: max(calc(var(--width) * var(--quantity)), 100%);
+          animation-name: scrollLeft;
+        }
+        .scrollRight .item {
+          right: max(calc(var(--width) * var(--quantity)), 100%);
+          animation-name: scrollRight;
+        }
+        .item img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      </style>
+      <div>
+        <div class="practices-text-div">
+          <h2>
+            Acompanhe um pouco das nossas
+            <span class="gradient-text-default">práticas</span>!
+          </h2>
+          <h5>(todas as fotos abaixo são de nossas aulas!)</h5>
+        </div>
+        <div
+          class="wrapper scrollleft"
+          style="--width: 266px; --height: 177px; --quantity: 10; --speed: 40s"
+        >
+          <div class="item" style="--position: 1">
+            <img
+              src="./media/Fotos em Cima/img-1485-easy-resizecom-6712ad00b3cdc.webp"
+              alt="Slider 01"
+            />
+          </div>
+          <div class="item" style="--position: 2">
+            <img
+              src="./media/Fotos em Cima/img-1351-easy-resizecom-1-6712ad0102016.webp"
+              alt="Slider 02"
+            />
+          </div>
+          <div class="item" style="--position: 3">
+            <img
+              src="./media/Fotos em Cima/img-0244-easy-resizecom-6712ad022746d.webp"
+              alt="Slider 03"
+            />
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="./media/Fotos em Cima/ebramev-agosto-img-9475-easy-resizecom-6712ad0273f83.webp"
+              alt="Slider 04"
+            />
+          </div>
+          <div class="item" style="--position: 5">
+            <img
+              src="./media/Fotos em Cima/ebramev-agosto-img-9445-easy-resizecom-6712ad039eb04.webp"
+              alt="Slider 05"
+            />
+          </div>
+          <div class="item" style="--position: 6">
+            <img
+              src="./media/Fotos em Cima/img-5020-easy-resizecom-1-6712acfd01c5a.webp"
+              alt="Slider 06"
+            />
+          </div>
+          <div class="item" style="--position: 7">
+            <img
+              src="./media/Fotos em Cima/img-3345-easy-resizecom-6712acfe414d5.webp"
+              alt="Slider 07"
+            />
+          </div>
+          <div class="item" style="--position: 8">
+            <img
+              src="./media/Fotos em Cima/img-3319-easy-resizecom-6712acfe5b2d7.webp"
+              alt="Slider 08"
+            />
+          </div>
+          <div class="item" style="--position: 9">
+            <img
+              src="./media/Fotos em Cima/img-3022-easy-resizecom-6712acff6e44a.webp"
+              alt="Slider 09"
+            />
+          </div>
+          <div class="item" style="--position: 10">
+            <img
+              src="./media/Fotos em Cima/img-2422-easy-resizecom-6712acffbaef7.webp"
+              alt="Slider 10"
+            />
+          </div>
+          <div class="item" style="--position: 10">
+            <img
+              src="./media/Fotos em Cima/img-6002-easy-resizecom-6712acfce08d5.webp"
+              alt="Slider 11"
+            />
+          </div>
+        </div>
+        <!-- Mid Images -->
+        <div
+          class="wrapper scrollRight"
+          style="--width: 200px; --height: 300px; --quantity: 13; --speed: 45s"
+        >
+          <div class="item" style="--position: 1">
+            <img
+              src="./media/Fotos no meio/ebramev-agosto-img-9463-easy-resizecom-6712b10acbf45.webp"
+              alt="Slider 12"
+            />
+          </div>
+          <div class="item" style="--position: 2">
+            <img
+              src="./media/Fotos no meio/img-1223-easy-resizecom-6712b109be568.webp"
+              alt="Slider 13"
+            />
+          </div>
+          <div class="item" style="--position: 3">
+            <img
+              src="./media/Fotos no meio/img-1307-easy-resizecom-6712b108adc7d.webp"
+              alt="Slider 14"
+            />
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="./media/Fotos no meio/ebramev-agosto-img-9467-easy-resizecom-6712b109c5592.webp"
+              alt="Slider 15"
+            />
+          </div>
+          <div class="item" style="--position: 5">
+            <img
+              src="./media/Fotos no meio/ebramev-agosto-img-9463-easy-resizecom-6712b10acbf45.webp"
+              alt="Slider 16"
+            />
+          </div>
+          <div class="item" style="--position: 6">
+            <img
+              src="./media/Fotos no meio/img-3372-easy-resizecom-6712b10cdc5ef.webp"
+              alt="Slider 17"
+            />
+          </div>
+          <div class="item" style="--position: 7">
+            <img
+              src="./media/Fotos no meio/img-3349-easy-resizecom-6712b10cece80.webp"
+              alt="Slider 18"
+            />
+          </div>
+          <div class="item" style="--position: 8">
+            <img
+              src="./media/Fotos no meio/img-2676-easy-resizecom-6712b10ddd65d.webp"
+              alt="Slider 19"
+            />
+          </div>
+          <div class="item" style="--position: 9">
+            <img
+              src="./media/Fotos no meio/img-2594-easy-resizecom-6712b1079b54d.webp"
+              alt="Slider 20"
+            />
+          </div>
+          <div class="item" style="--position: 10">
+            <img
+              src="./media/Fotos no meio/img-1471-easy-resizecom-6712b1079492b.webp"
+              alt="Slider 21"
+            />
+          </div>
+          <div class="item" style="--position: 11">
+            <img
+              src="./media/Fotos no meio/img-7644-easy-resizecom-6712b10ad52a4.webp"
+              alt="Slider 22"
+            />
+          </div>
+          <div class="item" style="--position: 12">
+            <img
+              src="./media/Fotos no meio/img-6163-easy-resizecom-6712b10bd749a.webp"
+              alt="Slider 23"
+            />
+          </div>
+          <div class="item" style="--position: 13">
+            <img
+              src="./media/Fotos no meio/img-4784-easy-resizecom-6712b10be36fa.webp"
+              alt="Slider 24"
+            />
+          </div>
+        </div>
+        <!-- Bottom Images -->
+        <div
+          class="wrapper scrollleft"
+          style="--width: 266px; --height: 177px; --quantity: 8; --speed: 40s"
+        >
+          <div class="item" style="--position: 1">
+            <img
+              src="./media/Fotos em Baixo/img-3506-easy-resizecom-6712b5591c648.webp"
+              alt="Slider 25"
+            />
+          </div>
+          <div class="item" style="--position: 2">
+            <img
+              src="./media/Fotos em Baixo/img-2584-easy-resizecom-6712b55a5355c.webp"
+              alt="Slider 26"
+            />
+          </div>
+          <div class="item" style="--position: 3">
+            <img
+              src="./media/Fotos em Baixo/img-1321-easy-resizecom-6712b55b677c8.webp"
+              alt="Slider 27"
+            />
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="./media/Fotos em Baixo/img-1279-easy-resizecom-6712b55c8edb5.webp"
+              alt="Slider 28"
+            />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./media/Fotos em Baixo/img-0269.webp" alt="Slider 29" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img
+              src="./media/Fotos em Baixo/img-8625-easy-resizecom-6712b5565ef77.webp"
+              alt="Slider 30"
+            />
+          </div>
+          <div class="item" style="--position: 7">
+            <img
+              src="./media/Fotos em Baixo/img-4845-easy-resizecom-6712b58ebac40.webp"
+              alt="Slider 31"
+            />
+          </div>
+          <div class="item" style="--position: 8">
+            <img
+              src="./media/Fotos em Baixo/img-4767-easy-resizecom-6712b557af2cf.webp"
+              alt="Slider 32"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

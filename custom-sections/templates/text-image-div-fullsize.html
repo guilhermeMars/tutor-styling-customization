@@ -39,25 +39,13 @@
           margin-right: 6rem;
         }
 
-        .main-title {
-          flex: 50%;
-        }
-
-        .main-title-text {
-          font-size: clamp(1.5rem, 4vw + 1rem, 4rem);
+        .titulo-side-image {
+          font-size: clamp(2rem, 4vw + 1rem, 4rem);
           color: hsl(0, 0%, 10%);
           flex: 50%;
           text-align: left;
           font-weight: bold;
           line-height: 4.5rem;
-        }
-
-        .sub-title-text {
-          font-size: clamp(0.75rem, 1.3vw + 1rem, 1.5rem);
-          color: hsl(0, 0%, 20%);
-          flex: 50%;
-          text-align: left;
-          font-weight: 500;
         }
 
         .side-text p {
@@ -75,60 +63,30 @@
           -webkit-text-fill-color: transparent;
         }
 
-        .btn-main-div {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 1rem;
-          margin-top: 1rem;
-        }
-
         .btn-cursos-side-div {
-          font-size: 1.2rem;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: row;
           gap: 0.5rem;
-          height: 3rem;
-          width: 12rem;
+          background-color: tomato;
+          padding: 0.5rem 1rem;
+          width: 10rem;
           border-radius: 30px;
           color: white;
           text-decoration: none;
           font-weight: 600;
-          background: rgb(182, 42, 126);
+          margin-top: 1rem;
           background: linear-gradient(
-            90deg,
-            rgba(182, 42, 126, 1) 60%,
-            rgba(186, 37, 189, 1) 100%
+            -45deg,
+            rgba(255, 0, 173, 1),
+            rgba(182, 39, 190, 1),
+            rgba(91, 88, 216, 1),
+            rgba(0, 207, 160, 1)
           );
-          border-radius: 7px;
-          transition: all 0.3s ease-in-out;
-        }
-
-        .btn-cursos-side-div:hover {
-          filter: brightness(108%);
-        }
-
-        .btn-cursos-secondary {
-          font-size: 1.2rem;
-          text-align: center;
-          color: gray;
-          border: 4px solid gray;
-          border-radius: 7px;
-          height: 2.6rem;
-          width: 12rem;
-          font-weight: 500;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease-in-out;
-        }
-
-        .btn-cursos-secondary:hover {
-          background-color: gray;
-          color: white;
+          background-size: 400% 400%;
+          animation: gradient 4s ease infinite;
+          border-radius: 2070px;
         }
 
         @keyframes gradient {
@@ -152,11 +110,12 @@
           box-sizing: border-box;
           border-radius: 20px 0 0 20px;
           overflow: hidden;
+          box-shadow: -6px 2px 20px rgba(0, 0, 0, 0.25);
           max-width: 800px;
         }
 
         .side-image img {
-          width: 90%;
+          width: 100%;
           max-width: 800px;
         }
 
@@ -172,26 +131,21 @@
 
           .text-image-div {
             width: 100%;
-            padding: 0 1rem;
+            padding: 0 0 0 1rem;
           }
 
-          .main-title-text {
+          .titulo-side-image {
             font-size: 3rem;
           }
         }
 
         @media only screen and (max-width: 767px) {
-          .main-title-text {
+          .titulo-side-image {
             font-size: 3rem;
           }
           .text-image-div {
             flex-direction: column;
-            align-items: normal;
             gap: 3rem;
-          }
-
-          .side-text {
-            margin-left: 0;
           }
 
           .side-image {
@@ -202,31 +156,23 @@
       <div class="text-image-div">
         <div class="justify-text-wrap">
           <div class="side-text">
-            <div class="main-title">
-              <h3 class="main-title-text">Jornada Anestblock</h3>
-              <h5 class="sub-title-text">Semana do conhecimento infinito</h5>
-            </div>
+            <h3 class="titulo-side-image">
+              Queremos ter<br /><span class="logo-gradient-text">você</span>
+              conosco!
+            </h3>
             <p>
-              Vamos embarcar em uma jornada única, repleta de descobertas,
-              insights e oportunidades para transformar sua carreira e
-              impulsionar seu desenvolvimento profissional!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at
+              molestie nisi. Integer vitae dignissim mauris. Curabitur vulputate
+              orci sed aliquet mollis. Nunc id consequat turpis.
             </p>
-            <div class="btn-main-div">
-              <a class="btn-cursos-side-div" href="#">
-                Ver mais
-                <img src="../media/Arrow Icon.svg" alt="Seta Ícone" />
-              </a>
-              <a
-                class="btn-cursos-secondary"
-                href="https://api.whatsapp.com/send?phone=551933702129"
-              >
-                Inscreva-se
-              </a>
-            </div>
+            <a class="btn-cursos-side-div" href="/cursos">
+              Ver cursos
+              <img src="../media/Arrow Icon.svg" alt="Seta Ícone" />
+            </a>
           </div>
         </div>
         <div class="side-image">
-          <img src="./media/test-main-image.png" alt="Side Image div" />
+          <img src="../media/home final image.webp" alt="Side Image div" />
         </div>
       </div>
     </section>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="variables.css" />
+  </head>
+  <body>
+    <section class="section">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .aq-text {
+          font-size: clamp(1.25rem, 1.3vw + 1rem, 2.2rem);
+          text-align: center;
+          font-weight: bolder !important;
+          line-height: 3.8rem;
+          margin-bottom: 2rem;
+        }
+
+        .aq-full-wd {
+          background-color: var(--quaternary-color);
+          width: 100%;
+          padding: 2.5rem 0;
+        }
+
+        .aq-flex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 1400px;
+          gap: 1rem;
+          margin: auto;
+        }
+
+        .aq-item {
+          background-color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 8px;
+          max-height: 3.5rem;
+          overflow: hidden;
+          transition: all 1.5s cubic-bezier(0.15, 0.29, 0.18, 1);
+          cursor: pointer;
+          width: 90%;
+        }
+
+        .aq-item:hover {
+          max-height: 20rem;
+        }
+
+        .aq-item-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+
+        .aq-item-title h4 {
+          font-weight: 500 !important;
+          font-size: 1.25rem;
+          color: var(--primary-color);
+          margin: 0;
+        }
+
+        .aq-item-title img {
+          width: 24px;
+          height: 24px;
+        }
+
+        .aq-item p,
+        .aq-item li {
+          color: hsl(0, 0%, 40%);
+          margin: 0 0.25rem;
+        }
+
+        .aq-item li {
+          list-style: inside;
+        }
+
+        @media (max-width: 866px) {
+          .aq-line-break {
+            max-height: 4.5rem !important;
+          }
+        }
+
+        @media (max-width: 521px) {
+          .aq-item {
+            padding: 0.8rem 0.5rem;
+          }
+
+          .aq-item-title {
+            min-height: 55px;
+            margin-bottom: 1rem;
+          }
+
+          .aq-item {
+            max-height: 5rem !important;
+          }
+
+          .aq-item-title h4 {
+            font-size: 1.15rem;
+            margin: 0;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .aq-line-break {
+            max-height: 6rem !important;
+          }
+        }
+      </style>
+      <main>
+        <div class="aq-text">
+          <h2>
+            <span class="gradient-text-default">Dúvidas frequentes</span>: Saiba
+            tudo sobre sua pós
+          </h2>
+        </div>
+        <div class="aq-full-wd">
+          <div class="aq-flex">
+            <div class="aq-item">
+              <div class="aq-item-title">
+                <h4>Quais os requisitos para iniciar a pós?</h4>
+                <img src="./media/Seta-icon.svg" alt="Seta Baixo" />
+                <!-- <i class="fa-solid fa-angle-down"></i> -->
+              </div>
+              <ul>
+                <li>
+                  Diploma de ensino superior (Graduação) ou quando emitido em
+                  instituições de ensino estrangeiras, na forma da regulação
+                  federal;
+                </li>
+                <li>Histórico escolar da graduação;</li>
+                <li>RG e CPF (versão digital);</li>
+                <li>CRMV (versão digital);</li>
+                <li>
+                  Certidão de nascimento (cópia ou versão digital); Comprovante
+                  de residência (cópia ou versão digital);
+                </li>
+                <li>Foto digital (para documento).</li>
+              </ul>
+            </div>
+            <div class="aq-item">
+              <div class="aq-item-title">
+                <h4>Qual a dinâmica das aulas?</h4>
+                <img src="./media/Seta-icon.svg" alt="Seta Baixo" />
+              </div>
+              <p>
+                Para esta pós, há disponibilidade em modalidade Presencial ou
+                EaD Ao Vivo, com aulas totalmente simultâneas entre as
+                modalidades, sendo encontros mensais em um final de semana por
+                mês, em formato teórico-prático.
+              </p>
+            </div>
+            <div class="aq-item">
+              <div class="aq-item-title">
+                <h4>Tem certificação?</h4>
+                <img src="./media/Seta-icon.svg" alt="Seta Baixo" />
+              </div>
+              <p>
+                Sim, com certeza. O curso é totalmente reconhecido e certificado
+                pelo MEC. Também, haverá a emissão de microcertificados a cada
+                módulo que o aluno concluir na pós-graduação.
+              </p>
+            </div>
+            <div class="aq-item">
+              <div class="aq-item-title">
+                <h4>Terei acesso a gravações das aulas?</h4>
+                <img src="./media/Seta-icon.svg" alt="Seta Baixo" />
+              </div>
+              <p>
+                Sim, porém, apenas se a sua turma tiver a modalidade EaD
+                simultaneamente com a modalidade presencial (vide no site se o
+                curso e turma pretendidos possuem aulas nestes parâmetros).
+              </p>
+            </div>
+            <div class="aq-item aq-line-break">
+              <div class="aq-item-title">
+                <h4>
+                  Como funcionam as aulas práticas para a modalidade EaD Ao
+                  Vivo?
+                </h4>
+                <img src="./media/Seta-icon.svg" alt="Seta Baixo" />
+              </div>
+              <p>
+                R.: As aulas práticas também são transmitidas online e ao vivo,
+                com total riqueza em detalhes através de nossas câmeras que
+                estão dentro de nossa estação de práticas. De qualquer modo, os
+                alunos da modalidade EaD podem estar presencialmente conosco em
+                até 3 ocasiões, ou seja, você pode escolher 3 dentre os módulos
+                de sua pós e agendar sua presenca no polo educacional relativo a
+                turma de sua pós.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
