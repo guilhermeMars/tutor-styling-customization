@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+
+        .main-title {
+          font-size: clamp(1.5rem, 5vw, 2.5rem);
+          text-align: center;
+        }
+
+        .difference-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .difference-container-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 5rem;
+          align-items: center;
+          justify-content: center;
+          max-width: 1000px;
+          background-image: url("./media/Background\ line.png");
+          background-position: center;
+          background-size: cover;
+          padding-top: 4rem;
+          margin-top: -1rem;
+        }
+
+        .difference {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          width: 100%;
+          margin-top: 4rem;
+        }
+
+        .difference-text-div {
+          flex: 50%;
+          /* min-width: 430px; */
+          /* max-width: 484px; */
+          background: linear-gradient(
+            125deg,
+            hsl(0, 0%, 95%),
+            hsla(0, 0%, 80%)
+          );
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          padding-bottom: 3rem;
+        }
+
+        .difference-text-img {
+          margin: -3rem 0 0 1rem;
+          background-color: hsla(0, 0%, 20%);
+          border-radius: 5px;
+          padding: 0 2rem;
+          max-width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #cobetiv-title {
+          background-color: #02225f;
+          padding: 1rem 2rem;
+        }
+
+        #dermatonline-title {
+          background-color: #332827;
+        }
+
+        .difference-text-img img {
+          width: 100%;
+        }
+
+        .difference-text {
+          padding: 0 2rem;
+        }
+
+        .difference-img-div {
+          flex: 50%;
+          /* min-width: 430px; */
+          /* max-width: 484px; */
+        }
+
+        .difference-img-div img {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 1015px) {
+          .difference-container-wrapper {
+            background-image: none;
+            padding: 4rem 1rem 0 1rem;
+            gap: 2rem;
+          }
+
+          .difference {
+            flex-direction: column;
+            gap: 4rem;
+          }
+
+          .difference-text-div {
+            order: 2;
+          }
+
+          .difference-img-div {
+            order: 1;
+          }
+
+          .difference-text-img {
+            margin: -1.75rem 0 0 0;
+          }
+        }
+      </style>
+      <main>
+        <div class="main-title">
+          <h2>
+            Quais as
+            <span style="text-decoration: underline">diferenças</span> dos
+            congressos?
+          </h2>
+        </div>
+        <div class="difference-container">
+          <div class="difference-container-wrapper">
+            <div class="difference">
+              <div class="difference-text-div">
+                <div class="difference-text-img">
+                  <img
+                    src="./media/bento-grids/Anescare Brasil.png"
+                    alt="Anestcare Brasil"
+                  />
+                </div>
+                <div class="difference-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis ipsum consectetur id autem perferendis vero saepe
+                    dolores. Alias neque laborum quos labore voluptates sunt vel
+                    dignissimos, eius ipsam? Iusto, consectetur.
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo dolore inventore pariatur. Ipsum, fugit, porro maxime
+                    veniam commodi voluptate perspiciatis facere autem
+                    consequatur tenetur quidem distinctio exercitationem
+                    provident. Quam, necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="difference-img-div">
+                <img
+                  src="./media/Anestcare Side Image.png"
+                  alt="Anestcare Images"
+                />
+              </div>
+            </div>
+            <div class="difference">
+              <div class="difference-img-div">
+                <img
+                  src="./media/Cobetiv Side Image.png"
+                  alt="Cobetiv Images"
+                />
+              </div>
+              <div class="difference-text-div">
+                <div class="difference-text-img" id="cobetiv-title">
+                  <img src="./media/Cobetiv Branco.png" alt="Cobetiv" />
+                </div>
+                <div class="difference-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis ipsum consectetur id autem perferendis vero saepe
+                    dolores. Alias neque laborum quos labore voluptates sunt vel
+                    dignissimos, eius ipsam? Iusto, consectetur.
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo dolore inventore pariatur. Ipsum, fugit, porro maxime
+                    veniam commodi voluptate perspiciatis facere autem
+                    consequatur tenetur quidem distinctio exercitationem
+                    provident. Quam, necessitatibus!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="difference">
+              <div class="difference-text-div">
+                <div class="difference-text-img" id="dermatonline-title">
+                  <img
+                    src="./media/bento-grids/Dermatonline.png"
+                    alt="Dermatonline"
+                  />
+                </div>
+                <div class="difference-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis ipsum consectetur id autem perferendis vero saepe
+                    dolores. Alias neque laborum quos labore voluptates sunt vel
+                    dignissimos, eius ipsam? Iusto, consectetur.
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo dolore inventore pariatur. Ipsum, fugit, porro maxime
+                    veniam commodi voluptate perspiciatis facere autem
+                    consequatur tenetur quidem distinctio exercitationem
+                    provident. Quam, necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="difference-img-div">
+                <img
+                  src="./media/Dermatonline Side Image.png"
+                  alt="Dermatonline Images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
