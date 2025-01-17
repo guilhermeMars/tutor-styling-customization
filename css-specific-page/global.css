@@ -224,6 +224,10 @@ a:hover {
   width: 100%;
 }
 
+.btn-banner-clique {
+  color: white !important;
+}
+
 #banner .btn-banner-clique {
   width: 8rem;
   background: linear-gradient(
@@ -238,10 +242,19 @@ a:hover {
     background-color: hsl(0, 0%, 0%, 0.6) !important;
   }
 
+  #banner .carousel-caption h4 {
+    color: white !important;
+  }
+
+  #banner .carousel-caption p {
+    color: white !important;
+  }
+
   .carousel-caption {
     align-items: center;
   }
 }
+
 /* Página de cursos */
 
 .products {
@@ -356,6 +369,7 @@ a:hover {
   text-align: center;
   min-height: 53px !important;
 }
+
 /* Barra lateral dos cursos */
 
 #courses .container .row {
@@ -786,6 +800,10 @@ a:hover {
 
   .courses19.primary .class-list-content .col-content-outer > .row {
     display: flex !important;
+  }
+
+  .courses19.primary .class-list-content .col-content-outer .col-content-inner {
+    max-width: 100% !important;
   }
 }
 

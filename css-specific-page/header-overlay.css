@@ -1,0 +1,52 @@
+.top-space {
+  background-color: hsla(0, 0%, 0%, 0.6) !important;
+  position: absolute;
+}
+
+#top-menu {
+  position: absolute;
+  top: 45px;
+  background-color: hsla(0, 0%, 0%, 0.6) !important;
+}
+
+.nav-link {
+  background: white !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700 !important;
+}
+
+.dropdown-menu {
+  background-color: hsla(0, 0%, 0%, 0.6) !important;
+}
+
+.navbar-nav li:has(ul.dropdown-menu.show) > a {
+  background: var(--quaternary-color) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-carrinho,
+.btn-cadastre {
+  color: white !important;
+}
+
+@media only screen and (max-width: 575px) {
+  #top-menu {
+    top: 0px;
+  }
+
+  .navbar-brand {
+    margin: 0 0 0 1rem;
+    padding: 0;
+  }
+
+  #logo2 {
+    max-height: 50px !important;
+  }
+
+  .navbar-toggler {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}
