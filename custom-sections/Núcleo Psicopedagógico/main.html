@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Poppins";
+        }
+
+        .np-main {
+          width: 100%;
+          height: 90vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./media/Nucleo\ Psicopedagógico\ Main.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        .np-image {
+          position: absolute;
+          top: 1rem;
+          max-width: 20rem;
+        }
+
+        .np-image img {
+          width: 100%;
+        }
+
+        .np-content {
+          height: 100%;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .np-text {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          margin-top: 4rem;
+        }
+
+        .np-text h1 {
+          font-size: clamp(1.85rem, 5vw, 4.5rem);
+        }
+
+        .np-text p {
+          color: hsl(0, 0%, 80%);
+          font-size: 1.2rem;
+        }
+
+        .np-quote {
+          font-style: italic;
+          font-weight: bold;
+        }
+
+        .np-btn-div {
+          margin-top: 4rem;
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .np-btn-div a {
+          text-decoration: none;
+          color: white;
+          padding: 0.5rem 1.5rem;
+          border-radius: 100px;
+          font-size: 1.2rem;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .np-btn-div a:hover {
+          filter: brightness(85%);
+          cursor: pointer;
+        }
+
+        .np-btn-div > :nth-child(1) {
+          background-color: hsl(0, 0%, 100%);
+          color: black;
+        }
+
+        .np-btn-div > :nth-child(2) {
+          background-color: hsl(0, 0%, 0%);
+        }
+
+        @media screen and (max-width: 600px) {
+          .np-text p {
+            font-size: 1rem;
+          }
+        }
+      </style>
+      <div class="np-main">
+        <div class="np-image">
+          <img src="./media/LOGO-DEGRADE-01.png" alt="Ebramev Logo" />
+        </div>
+        <div class="np-content">
+          <div class="np-text">
+            <h1>Núcleo Psicopedagógico<br />Ebramev</h1>
+            <p>
+              Encontre auxílio e direcionamento dentro do ambiente acadêmico.
+            </p>
+            <p class="np-quote">“Ninguém nunca luta sozinho”</p>
+          </div>
+          <div class="np-btn-div">
+            <a href="#">Conhecer o programa</a>
+            <a href="#">Encontrar ajuda</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

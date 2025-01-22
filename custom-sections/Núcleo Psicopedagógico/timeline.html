@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Poppins";
+        }
+
+        .npt-title {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: clamp(1.85rem, 5vw, 3rem);
+        }
+
+        .npt-timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: auto;
+        }
+
+        .npt-timeline::after {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 100%;
+          background-color: #353535;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+        }
+
+        .npt-timeline-item {
+          position: relative;
+          width: 50%;
+        }
+
+        /* Customizar o texto */
+        .npt-text {
+          background-color: #ebebeb;
+          position: relative;
+          padding: 20px 30px;
+          border-radius: 0.5rem;
+          color: #353535;
+        }
+
+        .npt-left {
+          left: 0;
+        }
+
+        .npt-left .npt-text {
+          margin: 1rem 3.5rem 1rem 1rem;
+        }
+
+        .npt-right {
+          left: 50%;
+        }
+
+        .npt-right .npt-text {
+          margin: 1rem 1rem 1rem 3.5rem;
+        }
+
+        .npt-icon {
+          position: absolute;
+          max-width: 4rem;
+          border-radius: 50%;
+          right: -33px;
+          top: 32px;
+          z-index: 10;
+        }
+
+        .npt-icon img {
+          width: 100%;
+        }
+
+        .npt-right .npt-icon {
+          left: -33px;
+        }
+
+        .npt-arrow {
+          height: 0;
+          width: 0;
+          position: absolute;
+          top: 50px;
+          z-index: 1;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+        }
+
+        .npt-left .npt-arrow {
+          border-left: 15px solid #ebebeb;
+          right: -15px;
+        }
+
+        .npt-right .npt-arrow {
+          border-right: 15px solid #ebebeb;
+          left: -15px;
+        }
+
+        @media screen and (max-width: 768px) {
+          .npt-timeline::after {
+            left: 36px;
+          }
+
+          .npt-timeline-item {
+            width: 100%;
+          }
+
+          .npt-left .npt-text,
+          .npt-right .npt-text {
+            margin: 1rem 1rem 1rem 4.6rem;
+            padding: 1rem 1.5rem;
+          }
+
+          .npt-right {
+            left: 0;
+          }
+
+          .npt-arrow,
+          .npt-left .npt-arrow {
+            border-right: 15px solid #ebebeb;
+            border-left: 0;
+            left: -13px;
+            top: 39px;
+            z-index: 10;
+          }
+
+          .npt-icon {
+            max-width: 2.5rem;
+          }
+
+          .npt-icon {
+            right: unset;
+            left: 1rem;
+          }
+
+          .npt-right .npt-icon {
+            left: 1rem;
+          }
+        }
+      </style>
+      <div class="npt-main">
+        <div class="npt-title">
+          <h2>Como funciona?</h2>
+        </div>
+        <div class="npt-timeline">
+          <div class="npt-timeline-item npt-left">
+            <div class="npt-icon">
+              <img src="media/Phone bg-black icon.svg" alt="Phone icon" />
+            </div>
+            <div class="npt-text">
+              <h4>Entre em contato</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+                cursus nisi. Vivamus dolor elit, lobortis vel tincidunt ac,
+                mollis et neque. Aenean in ex eros. Curabitur commodo
+              </p>
+              <span class="npt-arrow"></span>
+            </div>
+          </div>
+          <div class="npt-timeline-item npt-right">
+            <div class="npt-icon">
+              <img src="media/Person bg-black icon.svg" alt="Person icon" />
+            </div>
+            <div class="npt-text">
+              <h4>Entre em contato</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+                cursus nisi. Vivamus dolor elit, lobortis vel tincidunt ac,
+                mollis et neque. Aenean in ex eros. Curabitur commodo
+              </p>
+              <span class="npt-arrow"></span>
+            </div>
+          </div>
+          <div class="npt-timeline-item npt-left">
+            <div class="npt-icon">
+              <img
+                src="media/Conversation bg-black icon.svg"
+                alt="Conversation icon"
+              />
+            </div>
+            <div class="npt-text">
+              <h4>Entre em contato</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+                cursus nisi. Vivamus dolor elit, lobortis vel tincidunt ac,
+                mollis et neque. Aenean in ex eros. Curabitur commodo
+              </p>
+              <span class="npt-arrow"></span>
+            </div>
+          </div>
+          <div class="npt-timeline-item npt-right">
+            <div class="npt-icon">
+              <img src="media/Path bg-black icon.svg" alt="Path icon" />
+            </div>
+            <div class="npt-text">
+              <h4>Entre em contato</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+                cursus nisi. Vivamus dolor elit, lobortis vel tincidunt ac,
+                mollis et neque. Aenean in ex eros. Curabitur commodo
+              </p>
+              <span class="npt-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
