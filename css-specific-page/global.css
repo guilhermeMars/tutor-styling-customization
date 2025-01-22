@@ -814,6 +814,39 @@ a:hover {
 
 /* Cadastre-se Form */
 
+/* Tirar margin negativa
+Tirar padding lateral */
+
+.contact {
+  margin-bottom: 5rem !important;
+}
+
+.contact .contact-right {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.contact .contact-left {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact :nth-child(1) :nth-child(2) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact .contact-right {
+    display: block;
+    width: 90%;
+  }
+
+  .contact .contact-left {
+    width: 90%;
+  }
+}
+
 .registration-box,
 #divContact1 {
   background-color: transparent !important;
