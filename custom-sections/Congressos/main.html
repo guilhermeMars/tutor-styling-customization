@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+
+        .cong-first-main {
+          width: 100%;
+          height: 90vh;
+          background-image: url("./media/Congress\ main\ image.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+
+        .cong-text-section {
+          margin-top: 134px;
+          height: 100%;
+        }
+
+        .cong-fit-content {
+          background-color: hsl(0, 0%, 0%, 0.6);
+          height: 100%;
+          width: 28rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .cong-content-div {
+          color: white;
+          padding: 0 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 3rem;
+        }
+
+        .cong-text-div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .cong-text-div h1 {
+          font-size: 3.8rem;
+        }
+
+        .cong-buttons-div {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.5rem 1rem;
+        }
+
+        .cong-buttons-div a {
+          border: 3px solid white;
+          font-size: 1.25rem;
+          border-radius: 60px;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: 500;
+          color: white;
+          padding: 0.7rem 2rem;
+          transition: all 0.35s ease-in-out;
+        }
+
+        .cong-buttons-div a:hover {
+          background-color: white;
+          color: black;
+        }
+
+        @media (max-width: 767px) {
+          .cong-fit-content {
+            width: 100%;
+          }
+
+          .cong-content-div {
+            padding: 0 1rem;
+          }
+        }
+      </style>
+      <main class="cong-first-main">
+        <div class="cong-text-section">
+          <div class="cong-fit-content">
+            <div class="cong-content-div">
+              <div class="cong-text-div">
+                <h1>Congressos Ebramev</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  scelerisque sodales magna, eu faucibus odio ornare id. Ut
+                  imperdiet malesuada lacus, pulvinar iaculis dui fringilla id.
+                  Mauris sagittis eros eget vestibulum dapibus.
+                </p>
+              </div>
+              <div class="cong-buttons-div">
+                <a href="#">Cobetiv</a>
+                <a href="#">Anest. Brasil</a>
+                <a href="#">Dermatonline</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
